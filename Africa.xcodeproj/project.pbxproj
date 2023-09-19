@@ -19,6 +19,9 @@
 		30E325712AB9D27F00D14B8D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E325702AB9D27F00D14B8D /* MapView.swift */; };
 		30E325732AB9D29100D14B8D /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E325722AB9D29100D14B8D /* GalleryView.swift */; };
 		30E325752AB9D2A400D14B8D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E325742AB9D2A400D14B8D /* MainView.swift */; };
+		30E325782AB9D47600D14B8D /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E325772AB9D47600D14B8D /* CoverImageView.swift */; };
+		30E3257B2AB9D69500D14B8D /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3257A2AB9D69500D14B8D /* CoverImageModel.swift */; };
+		30E3257E2AB9D7BF00D14B8D /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3257D2AB9D7BF00D14B8D /* CodableBundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		30E325702AB9D27F00D14B8D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		30E325722AB9D29100D14B8D /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		30E325742AB9D2A400D14B8D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		30E325772AB9D47600D14B8D /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		30E3257A2AB9D69500D14B8D /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		30E3257D2AB9D7BF00D14B8D /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +84,13 @@
 		30E325492AB9CE1E00D14B8D /* Africa */ = {
 			isa = PBXGroup;
 			children = (
-				30E3256C2AB9D16300D14B8D /* Info.plist */,
+				30E3257C2AB9D7AA00D14B8D /* Extension */,
+				30E325792AB9D68400D14B8D /* Model */,
+				30E325762AB9D46900D14B8D /* View */,
+				30E3256D2AB9D21300D14B8D /* App */,
 				30E325632AB9D05600D14B8D /* Data */,
 				30E325582AB9D00C00D14B8D /* Video */,
-				30E3256D2AB9D21300D14B8D /* App */,
+				30E3256C2AB9D16300D14B8D /* Info.plist */,
 				30E3254E2AB9CE1F00D14B8D /* Assets.xcassets */,
 				30E325502AB9CE1F00D14B8D /* Preview Content */,
 			);
@@ -135,6 +144,30 @@
 				30E325742AB9D2A400D14B8D /* MainView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		30E325762AB9D46900D14B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30E325772AB9D47600D14B8D /* CoverImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30E325792AB9D68400D14B8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30E3257A2AB9D69500D14B8D /* CoverImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30E3257C2AB9D7AA00D14B8D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				30E3257D2AB9D7BF00D14B8D /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,10 +246,13 @@
 			files = (
 				30E3254D2AB9CE1E00D14B8D /* ContentView.swift in Sources */,
 				30E325752AB9D2A400D14B8D /* MainView.swift in Sources */,
+				30E325782AB9D47600D14B8D /* CoverImageView.swift in Sources */,
+				30E3257B2AB9D69500D14B8D /* CoverImageModel.swift in Sources */,
 				30E325712AB9D27F00D14B8D /* MapView.swift in Sources */,
 				30E3254B2AB9CE1E00D14B8D /* AfricaApp.swift in Sources */,
 				30E3256F2AB9D26500D14B8D /* VideoListView.swift in Sources */,
 				30E325732AB9D29100D14B8D /* GalleryView.swift in Sources */,
+				30E3257E2AB9D7BF00D14B8D /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
