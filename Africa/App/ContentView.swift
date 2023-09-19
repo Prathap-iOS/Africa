@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let animal: [Animal] = Bundle.main.decode("animals.json")
+    
     var body: some View {
         NavigationView {
             List {
                 CoverImageView()
                     .frame(height: 300)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                
+                ForEach(animal) { animal in
+                    AnimalListItemView(animal: animal)
+                }
             } //: LIST
             .navigationBarTitle("Africa", displayMode: .large)
         } //: NAVIGATION
