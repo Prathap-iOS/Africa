@@ -18,6 +18,8 @@
 		306339022ABA195300F5F90E /* ExternalWebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306339012ABA195300F5F90E /* ExternalWebLinkView.swift */; };
 		3088B9BD2ABC53FA00AE5DEA /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088B9BC2ABC53FA00AE5DEA /* Stickers.xcassets */; };
 		3088B9C12ABC53FA00AE5DEA /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3088B9BA2ABC53F800AE5DEA /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3088B9C72ABC56FC00AE5DEA /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088B9C62ABC56FC00AE5DEA /* CreditsView.swift */; };
+		3088B9CA2ABC592200AE5DEA /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088B9C92ABC592200AE5DEA /* CenterModifier.swift */; };
 		309E70702ABC288900C939D8 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E706F2ABC288900C939D8 /* AnimalGridItemView.swift */; };
 		30D55ED82ABB1EAF00791052 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D55ED72ABB1EAF00791052 /* VideoModel.swift */; };
 		30D55EDA2ABB1F2700791052 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D55ED92ABB1F2700791052 /* VideoListItemView.swift */; };
@@ -79,6 +81,9 @@
 		3088B9BA2ABC53F800AE5DEA /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3088B9BC2ABC53FA00AE5DEA /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		3088B9BE2ABC53FA00AE5DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3088B9C62ABC56FC00AE5DEA /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		3088B9C92ABC592200AE5DEA /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		3088B9CB2ABC5B7400AE5DEA /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 		309E706F2ABC288900C939D8 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 		30D55ED72ABB1EAF00791052 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		30D55ED92ABB1F2700791052 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
@@ -135,6 +140,14 @@
 			path = Stickers;
 			sourceTree = "<group>";
 		};
+		3088B9C82ABC590700AE5DEA /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				3088B9C92ABC592200AE5DEA /* CenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		30D55EDD2ABB263700791052 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +177,8 @@
 		30E325492AB9CE1E00D14B8D /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				3088B9CB2ABC5B7400AE5DEA /* Africa.entitlements */,
+				3088B9C82ABC590700AE5DEA /* Modifier */,
 				30D55EDD2ABB263700791052 /* Helper */,
 				30E3256D2AB9D21300D14B8D /* App */,
 				30E325762AB9D46900D14B8D /* View */,
@@ -243,6 +258,7 @@
 				303EEA1D2ABB66B500CF35B3 /* MapAnnotationView.swift */,
 				303EEA1F2ABB6B1100CF35B3 /* MotionAnimationView.swift */,
 				309E706F2ABC288900C939D8 /* AnimalGridItemView.swift */,
+				3088B9C62ABC56FC00AE5DEA /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -390,8 +406,10 @@
 				309E70702ABC288900C939D8 /* AnimalGridItemView.swift in Sources */,
 				306338FC2ABA118500F5F90E /* InsetGalleryView.swift in Sources */,
 				30D55EDA2ABB1F2700791052 /* VideoListItemView.swift in Sources */,
+				3088B9C72ABC56FC00AE5DEA /* CreditsView.swift in Sources */,
 				30E3257E2AB9D7BF00D14B8D /* CodableBundleExtension.swift in Sources */,
 				303EEA202ABB6B1100CF35B3 /* MotionAnimationView.swift in Sources */,
+				3088B9CA2ABC592200AE5DEA /* CenterModifier.swift in Sources */,
 				306338FA2ABA106200F5F90E /* HeadingView.swift in Sources */,
 				30D55EDC2ABB255100791052 /* VideoPlayerView.swift in Sources */,
 			);
@@ -422,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prathap.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prathap.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -565,6 +585,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -574,8 +595,7 @@
 				INFOPLIST_FILE = Africa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +604,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.prathap.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -595,6 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -604,8 +628,7 @@
 				INFOPLIST_FILE = Africa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -614,6 +637,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.prathap.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
